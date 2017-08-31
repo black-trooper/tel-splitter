@@ -1,0 +1,37 @@
+{
+  "name": "tel-splitter",
+  "version": "0.0.1",
+  "description": "ハイフンなしの電話番号を分割＆フォーマットする",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://black-trooper@github.com/black-trooper/tel-splitter-js.git"
+  },
+  "keywords": [
+    "tel",
+    "telephone",
+    "split",
+    "splitter"
+  ],
+  "author": "black-trooper",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/black-trooper/tel-splitter-js/issues"
+  },
+  "homepage": "https://github.com/black-trooper/tel-splitter-js#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babelify": "^7.3.0",
+    "browserify": "^14.4.0",
+    "eslint-plugin-html": "^3.2.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^7.0.0",
+    "gulp-eslint": "^4.0.0",
+    "run-sequence": "^2.1.0",
+    "vinyl-source-stream": "^1.1.0"
+  }
+}
