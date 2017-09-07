@@ -14,7 +14,9 @@
     "tel",
     "telephone",
     "split",
-    "splitter"
+    "splitter",
+    "format",
+    "formatter"
   ],
   "author": "black-trooper",
   "license": "MIT",
