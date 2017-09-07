@@ -19,7 +19,7 @@ npm install --save tel-splitter
 import telSplitter from 'tel-splitter';
 
 // using CommonJS modules
-let telSplitter = require('tel-splitter').default;
+let telSplitter = require('tel-splitter');
 ```
 
 ```html

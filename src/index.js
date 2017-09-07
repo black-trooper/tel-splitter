@@ -445,4 +445,4 @@ class TelSplitter {
     }
   }
 }
-export default new TelSplitter()
+module.exports = new TelSplitter()
