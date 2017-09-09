@@ -1,6 +1,6 @@
 {
   "name": "tel-splitter",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "ハイフンなしの電話番号を分割＆フォーマットする",
   "main": "dist/index.js",
   "scripts": {
