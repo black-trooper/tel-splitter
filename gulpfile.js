@@ -7,9 +7,11 @@ const babel = require('gulp-babel');
 const browserify = require('browserify');
 const babelify = require('babelify');
 const source = require('vinyl-source-stream');
+const mocha = require('gulp-mocha');
 
 const watch_target = [
-  'src/index.js'
+  'src/*.js',
+  'test/*.js'
 ];
 
 // TASK
@@ -19,6 +21,7 @@ gulp.task('default', function () {
     'eslint',
     'babel',
     'browserify',
+    'mocha',
     'watch'
   );
 });
@@ -44,7 +47,8 @@ gulp.task('watch', function () {
     sequence(
       'eslint',
       'babel',
-      'browserify'
+      'browserify',
+      'mocha'
     );
   });
 });
@@ -54,4 +58,11 @@ gulp.task('eslint', function () {
     .pipe(eslint({ fix: true }))
     .pipe(eslint.format())
     .pipe(eslint.failAfterError());
+});
+
+gulp.task('mocha', function () {
+  return gulp.src(['test/*.js'], { read: false })
+    .pipe(mocha({
+      reporter: 'spec'
+    }));
 });
