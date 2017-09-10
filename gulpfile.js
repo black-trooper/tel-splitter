@@ -8,6 +8,8 @@ const browserify = require('browserify');
 const babelify = require('babelify');
 const source = require('vinyl-source-stream');
 const mocha = require('gulp-mocha');
+const istanbul = require('gulp-istanbul');
+const isparta = require('isparta')
 
 const watch_target = [
   'src/*.js',
@@ -21,7 +23,7 @@ gulp.task('default', function () {
     'eslint',
     'babel',
     'browserify',
-    'mocha',
+    'test',
     'watch'
   );
 });
@@ -48,7 +50,7 @@ gulp.task('watch', function () {
       'eslint',
       'babel',
       'browserify',
-      'mocha'
+      'test'
     );
   });
 });
@@ -60,9 +62,15 @@ gulp.task('eslint', function () {
     .pipe(eslint.failAfterError());
 });
 
-gulp.task('mocha', function () {
-  return gulp.src(['test/*.js'], { read: false })
-    .pipe(mocha({
-      reporter: 'spec'
-    }));
+gulp.task('pre-test', function () {
+  return gulp.src('src/*.js')
+    .pipe(istanbul({ instrumenter: isparta.Instrumenter }))
+    .pipe(istanbul.hookRequire());
+});
+
+gulp.task('test', ['pre-test'], function () {
+  return gulp.src('test/*.js')
+    .pipe(mocha())
+    .pipe(istanbul.writeReports())
+    .pipe(istanbul.enforceThresholds({ thresholds: { global: 90 } }));
 });
