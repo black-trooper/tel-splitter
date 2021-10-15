@@ -1,5 +1,5 @@
-const assert = require('assert');
-const telSplitter = require('../src/index');
+const assert = require('assert')
+const telSplitter = require('../src/index')
 
 describe('test-splitter', function () {
   it('format', function () {

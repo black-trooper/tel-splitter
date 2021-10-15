@@ -18,7 +18,7 @@ http://www.soumu.go.jp/main_sosiki/joho_tsusin/top/tel_number/shigai_list.html
 npm install --save tel-splitter
 ```
 ```javascript
-// using ES6 modules
+// using ES modules
 import telSplitter from 'tel-splitter';
 
 // using CommonJS modules
@@ -27,7 +27,7 @@ let telSplitter = require('tel-splitter');
 
 ```html
 <!-- CDN経由でブラウザ上のscriptタグから呼び出す場合 -->
-<script type="text/javascript" src="https://unpkg.com/tel-splitter/tel-splitter.js"></script>
+<script type="text/javascript" src="https://unpkg.com/tel-splitter/tel-splitter.min.js"></script>
 ```
 
 ## Usage
