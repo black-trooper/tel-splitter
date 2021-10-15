@@ -27,6 +27,8 @@ describe('test-splitter', function () {
     assert.equal(telSplitter.format('050xxxxyyyy', true), '050-xxxx-yyyy')
     assert.equal(telSplitter.format('0120xxxyyyy'), '0120-xxx-yyyy')
     assert.equal(telSplitter.format('0120xxxyyyy', true), '0120-xxx-yyyy')
+    assert.equal(telSplitter.format('0200xxxxxyyyyy'), '0200-xxxxx-yyyyy')
+    assert.equal(telSplitter.format('0200xxxxxyyyyy', true), '0200-xxxxx-yyyyy')
     assert.equal(telSplitter.format('0800xxxyyyy'), '0800-xxx-yyyy')
     assert.equal(telSplitter.format('0800xxxyyyy', true), '0800-xxx-yyyy')
     assert.equal(telSplitter.format('0570xxxyyyy'), '0570-xxx-yyyy')

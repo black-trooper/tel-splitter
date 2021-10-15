@@ -421,7 +421,8 @@ class TelSplitter {
     ]
 
     this.otherPhoneMap = {
-      '020': 4, // その他
+      '020': 4, // M2M等専用番号
+      '0200': 5, // M2M等専用番号
       '050': 4, // IP電話
       '070': 4, // 携帯電話 
       '080': 4, // 携帯電話
@@ -433,7 +434,8 @@ class TelSplitter {
     }
 
     this.otherPhoneStrictMap = {
-      '020': 3, // その他 strict
+      '020': 3, // M2M等専用番号 strict
+      '0200': 5, // M2M等専用番号
       '050': 4, // IP電話 
       '070': 3, // 携帯電話 strict
       '080': 3, // 携帯電話 strict
