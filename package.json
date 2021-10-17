@@ -14,8 +14,9 @@
   },
   "scripts": {
     "start": "tsdx watch",
-    "build": "tsdx build --format cjs,esm,umd",
+    "build": "tsdx build --format cjs,esm,umd --name TelSplitter",
     "test": "tsdx test",
+    "test:coverage": "tsdx test --coverage",
     "prepare": "tsdx build"
   },
   "repository": {
