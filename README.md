@@ -1,9 +1,6 @@
 Tel-Splitter
 =============
 
-[![Build Status](https://travis-ci.org/black-trooper/tel-splitter.svg?branch=develop)](https://travis-ci.org/black-trooper/tel-splitter)
-[![Coverage Status](https://coveralls.io/repos/github/black-trooper/tel-splitter/badge.svg?branch=develop)](https://coveralls.io/github/black-trooper/tel-splitter?branch=develop)
-
 ## Overview
 ハイフンで区切られていない電話番号をフォーマットするツールです。
 
