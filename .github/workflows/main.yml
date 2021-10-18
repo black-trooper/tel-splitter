@@ -1,4 +1,4 @@
-name: CI
+name: Test and Build
 on: [push]
 jobs:
   build:
@@ -24,6 +24,11 @@ jobs:
 
       - name: Test
         run: yarn test --ci --coverage --maxWorkers=2
+        
+      - name: Upload Coverage
+        uses: codecov/codecov-action@v1
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
 
       - name: Build
         run: yarn build

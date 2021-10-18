@@ -1,6 +1,9 @@
 Tel-Splitter
 =============
 
+[![Build Status](https://github.com/black-trooper/tel-splitter/actions/workflows/main.yml/badge.svg)](https://github.com/black-trooper/tel-splitter/actions/workflows/main.yml)
+[![codecov](https://codecov.io/gh/black-trooper/tel-splitter/branch/master/graph/badge.svg?token=K0ZRNJsITB)](https://codecov.io/gh/black-trooper/tel-splitter)
+
 ## Overview
 ハイフンで区切られていない電話番号をフォーマットするツールです。
 
