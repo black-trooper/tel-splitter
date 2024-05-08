@@ -439,6 +439,11 @@ const otherPhones: OtherPhone[] = [
     digit: 4
   },
   {
+    key: '060',
+    digit: 4,
+    strictDigit: 3
+  },
+  {
     key: '070',
     digit: 4,
     strictDigit: 3

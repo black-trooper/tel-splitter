@@ -16,6 +16,8 @@ describe('test-splitter', function () {
         expect(format('020xxxxyyyy', true)).toEqual('020-xxx-xyyyy')
         expect(format('0200xxxyyyy')).toEqual('020-0xxx-yyyy')
         expect(format('0200xxxyyyy', true)).toEqual('020-0xx-xyyyy')
+        expect(format('060xxxxyyyy')).toEqual('060-xxxx-yyyy')
+        expect(format('060xxxxyyyy', true)).toEqual('060-xxx-xyyyy')
         expect(format('070xxxxyyyy')).toEqual('070-xxxx-yyyy')
         expect(format('070xxxxyyyy', true)).toEqual('070-xxx-xyyyy')
         expect(format('080xxxxyyyy')).toEqual('080-xxxx-yyyy')
